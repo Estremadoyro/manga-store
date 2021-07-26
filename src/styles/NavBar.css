@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_container {
+  background-color: #6466f5;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  position: relative;
+}
+
+.navbar_container > nav > .nav_links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_container > nav > .nav_links > li {
+  display: inline-block;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+/* Logo */
+.logo_nav_bar {
+  height: 2rem;
+  margin-left: 1rem;
+  /* position: absolute; */
+  /* left: 0px; */
+  /* margin-left: 1.5rem; */
+  /* Align vertical with absolute */
+  /* top: 50%; */
+  /* margin-top: -1rem; */
+}
+
+.navbar_container > nav > .nav_links > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Asap", sans-reif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 34px;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar_container > nav > .nav_links > li > a:hover {
+  color: #e96d77;
+}
+
+.navbar_container > .login_register_link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Asap", sans-reif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 34px;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar_container > .login_register_link:hover {
+  color: #e96d77;
+}
+
+.navbar_container > .login_register_link > .login_icon {
+  margin-right: 0.5rem;
+}
+
+.navbar_container > .login_register_link > .login_register {
+  margin-right: 1rem;
+}
