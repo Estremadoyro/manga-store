@@ -15,21 +15,25 @@ export const NavBar: React.FC = () => {
         <ul className="nav_links">
           <li>
             <Link to="/shonenjump" className="nav_link">
-              Shonen Jump{" "}
+              <i className="fas fa-fire-alt nav_icon"></i>
+              Shonen Jump
             </Link>
           </li>
           <li>
             <Link to="/noticias" className="nav_link">
+              <i className="far fa-newspaper nav_icon"></i>
               Noticias{" "}
             </Link>
           </li>
           <li>
             <Link to="/calendario" className="nav_link">
+              <i className="far fa-calendar-alt nav_icon"></i>
               Calendario
             </Link>
           </li>
           <li>
             <Link to="/ofertas" className="nav_link">
+              <i className="fas fa-tags nav_icon"></i>
               Ofertas
             </Link>
           </li>

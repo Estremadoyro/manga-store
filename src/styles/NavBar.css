@@ -38,7 +38,7 @@ body {
   /* margin-top: -1rem; */
 }
 
-.navbar_container > nav > .nav_links > li > a {
+.navbar_container > nav > .nav_links > li > .nav_link {
   color: #fff;
   text-decoration: none;
   font-family: "Asap", sans-reif;
@@ -48,8 +48,13 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.navbar_container > nav > .nav_links > li > a:hover {
+.navbar_container > nav > .nav_links > li > .nav_link:hover {
   color: #e96d77;
+}
+
+.navbar_container > nav > .nav_links > li > .nav_link > .nav_icon {
+  margin-right: 0.5rem;
+  /* color: #e96d77; */
 }
 
 .navbar_container > .login_register_link {
