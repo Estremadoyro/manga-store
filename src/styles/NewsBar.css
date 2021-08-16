@@ -6,7 +6,7 @@ body {
 }
 
 .newsbar_container {
-  background: #fff;
+  /* background: #fff; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   display: flex;
@@ -29,7 +29,7 @@ body {
   width: 10%;
   font-weight: 900;
   color: #fff;
-  background-color: #000;
+  background-color: #e96d77;
   height: inherit;
   display: flex;
   align-items: center;

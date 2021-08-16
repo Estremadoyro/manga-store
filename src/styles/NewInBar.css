@@ -1,0 +1,13 @@
+.newinbar_manga {
+  background-image: url("../static/newsbar/dr_stone.jpg");
+  background-repeat: no-repeat;
+  background-size: 800px 400px;
+  background-position: top -50px;
+  opacity: 0.7;
+  height: inherit;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-left: 0.5rem;
+}
