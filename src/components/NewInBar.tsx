@@ -5,6 +5,7 @@ import "../styles/NewInBar.css";
 interface element {
   name: string;
   volume: number;
+  bg_img: string;
 }
 
 interface IProps {
@@ -14,8 +15,12 @@ interface IProps {
 export const NewInBar: React.FC<IProps> = ({ mangas }) => {
   const [currentManga, setCurrentManga] = useState<number>(0);
   return (
-    <div className="newinbar_manga">
-      {mangas[currentManga].name}, Vol. {mangas[currentManga].volume}
-    </div>
+    <>
+      {mangas.map((manga, index) => (
+        <div className="newinbar_manga" style={{ backgroundImage: `url(${manga.bg_img})` }} key={index}>
+          {manga.name}, Vol. {manga.volume}
+        </div>
+      ))}
+    </>
   );
 };

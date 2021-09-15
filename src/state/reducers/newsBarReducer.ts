@@ -1,7 +1,7 @@
 import { NewsBarAction } from "../actions/index";
 import { NewsBarActionType } from "../action-types/index";
 
-import { next, previous } from "../../hooks/newsBarHooks";
+import { next, previous } from "../../scripts/newsBarScripts";
 
 interface NewsBarState {
   offset: number;

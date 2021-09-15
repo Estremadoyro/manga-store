@@ -15,18 +15,20 @@ body {
   height: 2.5rem;
   position: relative;
   font-family: "Asap", sans-serif;
+  overflow: hidden;
+  border: 2px solid blue;
 }
 
 .newsbar_container > .newsbar_wrapper {
   width: 800px;
   height: inherit;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   display: flex;
   align-items: center;
   position: relative;
 }
-.newsbar_container > .newsbar_wrapper > .newsbar_title {
-  width: 10%;
+.newsbar_container > .newsbar_title {
+  width: 80px;
   font-weight: 900;
   color: #fff;
   background-color: #e96d77;
@@ -34,17 +36,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.newsbar_container > .newsbar_wrapper > .newsbar_manga {
-  background-image: url("../static/newsbar/dr_stone.jpg");
-  background-repeat: no-repeat;
-  background-size: 800px 400px;
-  background-position: top -50px;
-  opacity: 0.7;
-  height: inherit;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  padding-left: 0.5rem;
 }
