@@ -1,39 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+
 body {
   margin: 0;
   padding: 0;
 }
 
-.newsbar_container {
-  /* background: #fff; */
+.newsbar {
+  width: 800px;
+  margin: 0 auto 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2.5rem;
-  position: relative;
-  font-family: "Asap", sans-serif;
-  overflow: hidden;
-  border: 2px solid blue;
 }
 
-.newsbar_container > .newsbar_wrapper {
-  width: 800px;
-  height: inherit;
-  border: 2px solid red;
-  display: flex;
+.newsbar > .newsbar_container {
+  box-sizing: border-box;
+  justify-content: center;
   align-items: center;
+  font-family: "Asap", sans-serif;
   position: relative;
+  overflow: hidden;
 }
-.newsbar_container > .newsbar_title {
+.newsbar > .newsbar_container > .newsbar_title {
+  /* left: -10px; */
+  position: absolute;
+  z-index: 1;
   width: 80px;
+  height: 40px;
   font-weight: 900;
   color: #fff;
   background-color: #e96d77;
-  height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.newsbar > .newsbar_container > .newsbar_wrapper {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: relative;
+}
+
+.newsbar > .newsbar_container > .newsbar_wrapper > .newsbar_item {
+  height: 2.5rem;
+  width: 100%;
+}
+
+.newsbar > .newsbar_container > .newsbar_wrapper > .newsbar_item > .newsbar_manga_slide {
+  /* background-size: 800px 400px; */
+  /* background-position: top -50px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.5; */
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 30px;
+  text-align: left;
+  padding-left: 80px;
+  text-transform: uppercase;
+  /* padding-left: 0.5rem; */
+  /* padding: 0; */
+  /*Make text not selectable*/
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.newsbar > .newsbar_container > .newsbar_wrapper > .newsbar_item > .newsbar_manga_slide > .newsbar_manga_title_volume {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 10px;
+  color: #fff;
 }

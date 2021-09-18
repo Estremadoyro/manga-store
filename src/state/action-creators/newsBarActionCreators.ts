@@ -9,14 +9,13 @@ import { threshold } from "../../scripts/newsBarScripts";
 
 export const swipingSlideAction = (e: SwipeEventData) => {
   return (dispatch: Dispatch<NewsBarAction>) => {
-    dispatch({ type: NewsBarActionType.NEWSBAR_DRAG, offset: -e.deltaX });
+    dispatch({ type: NewsBarActionType.NEWSBAR_DRAG, offset: e.deltaX });
   };
 };
 
 export const swipedSlideAction = (e: SwipeEventData, length: number, dir: 1 | -1) => {
   return (dispatch: Dispatch<NewsBarAction>) => {
     const t = threshold(e.event.target);
-    // const direction = dir * e.deltaX;
     const direction = e.absX;
     if (direction >= t) {
       console.log(`Fully swiped left or right`);

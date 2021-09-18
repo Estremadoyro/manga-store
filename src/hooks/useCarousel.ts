@@ -11,7 +11,7 @@ export const useCarousel = (length: number): [SwipeableHandlers, React.CSSProper
   const { swipedSlideAction, swipingSlideAction, finishSlideChangeAction } = useActions();
   const State = new Carousel(offset, desired, active);
   const handlers = useSwipeable({
-    onSwiped(e) {
+    onSwiping(e) {
       swipingSlideAction(e);
     },
     onSwipedLeft(e) {
@@ -23,8 +23,6 @@ export const useCarousel = (length: number): [SwipeableHandlers, React.CSSProper
     trackMouse: true,
     trackTouch: true,
   });
-
-  // finishSlideChangeAction(State.desired, 400);
 
   useEffect(() => {
     const id = setTimeout(() => finishSlideChangeAction(), 400);
